@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫超市-理想生活上天猫</title>
+    <style>
+        #list1{
+            background: #cccccc;
+            float: left;
+        }
+        #list2{
+            background: #cccccc;
+            float: right;
+        }
+        #list1 .item{
+            height: 30px;
+            padding-right: 6px;
+            line-height: 30px;
+            text-align: center;
+            float: left;
+        }
+        #list2 .item{
+            height: 30px;
+            padding-right: 6px;
+            line-height: 30px;
+            text-align: center;
+            float: right;
+        }
+        li {
+            list-style: none;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #list2 .submenu{
+            display: none;
+        }
+        #list2 .submenu>li {
+            cursor: pointer;
+        }
+        }
+        #list1 .submenu>li {
+            cursor: pointer;
+        }
+        #list2 .item:hover > .submenu {
+            display: block;
+        }
+        #list1 .item > a {
+            color: #000000;
+            text-decoration: none;
+            height: 30px;
+            display: block;
+        }
+        #list2 .item > a {
+            color: #000000;
+            text-decoration: none;
+            height: 30px;
+            display: block;
+        }
+        #list1 .item > a:hover{
+            color: red;
+        }
+        #list2 .item > a:hover{
+            color:red;
+        }
+        #list2 .submenu > li:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list1">
+        <li class="item"><a href="" >天猫超市</a></li>
+        <li class="item">喵，欢迎来天猫</li>
+        <li class="item"><a href="">请登录</a></li>
+        <li class="item"><a href="">免费注册</a></li>
+    </ul>
+    <ul id="list2">
+        <li class="item"><a href="">手机版</a></li>
+        <li class="item"><a href="">淘宝网</a></li>
+        <li class="item"><a href="">商家支持</a></li>
+        <li class="item"><a href="">网站导航</a></li>
+        <li class="item"><a href="">我的淘宝</a>
+        <ul class="submenu">
+            <li>已买到的宝贝</li>
+            <li>已卖出的宝贝</li>
+        </ul>
+            </li>
+        <li class="item"><a href="">购物车</a></li>
+        <li class="item"><a href="">收藏夹</a>
+        <ul class="submenu">
+            <li>收藏的宝贝</li>
+            <li>收藏的店铺</li>
+        </ul>
+        </li>
+    </ul>
+</body>
+</html>
