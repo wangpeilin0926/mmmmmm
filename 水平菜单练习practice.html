@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平导航菜单</title>
+    <style>
+        #list{
+            width: 420px;
+            height: 30px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            list-style: none;
+        }
+        #list .item{
+            width: 100px;
+            height: 30px;
+            background: #ff0000;
+            float: left;
+            line-height: 30px;
+            margin-right: 5px;
+            text-align: center;
+        }
+        #list .item:hover{
+            background: #000;
+        }
+        #list .item > a{
+            text-decoration: none;
+        }
+        #list .submenu {
+            background: #cccccc;
+            cursor: pointer;
+        }
+        #list .submenu {
+            display: none;
+        }
+        #list .submenu > li:hover{
+            background: #999999;
+        }
+        #list .item:hover > .submenu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+        <ul id="list">
+            <li class="item"><a href="">LinkOne</a></li>
+            <li class="item"><a href="">LinkTwo</a></li>
+            <li class="item"><a href="">LinkThree</a>
+                <ul class="submenu">
+                    <li>001</li>
+                    <li>002</li>
+                    <li>003</li>
+                    <li>004</li>
+                </ul>
+            </li>
+            <li class="item"><a href="">LinkFour</a></li>
+        </ul>
+
+</body>
+</html>
