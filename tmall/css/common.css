@@ -4,3 +4,15 @@ li{
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
+.wrapper{
+    width:1230px;
+    height: 100%;
+    margin: 0 auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
